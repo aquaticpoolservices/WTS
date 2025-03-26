@@ -261,3 +261,7 @@ document.getElementById('form').addEventListener('submit', function (event) {
 document.getElementById('printResults').addEventListener('click', function () {
   window.print(); // This will print the full page
 });
+
+document.getElementById('newTest').addEventListener('click', function () {
+  window.location.reload();
+})
