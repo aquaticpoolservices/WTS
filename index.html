@@ -16,53 +16,48 @@
     <div class="container">
 
         <!-- input for pool volume -->
-            <input class="grids" type="number" name="volume" id="volume" placeholder="volume x1000L" step="0.01" required>
+            <input class="grids" type="number" name="volume" id="volume" placeholder="volume x1000L" step="0.01" >
 
         <!-- PH level -->
-            <input class="grids" type="number" name="ph" id="ph" placeholder="PH Level" step="0.01" required>
+            <input class="grids" type="number" name="ph" id="ph" placeholder="PH Level" step="0.01" >
 
         <!-- select pool surface type -->
-            <select class="grids" id="surface" name="surfaceType" required>
+            <select class="grids" id="surface" name="surfaceType" >
                 <option value="" disabled selected>Pool surface</option>
-                <option value="concrete">Concrete</option>
-                <option value="fiberglass">Fiberglass</option>
+                <option value="concrete" class="blackText">Concrete</option>
+                <option value="fiberglass" class="blackText">Fiberglass</option>
             </select>
 
         <!-- stabelizer level -->
-            <input class="grids" type="number" name="stabelizer" id="stabilizer" placeholder="Stabelizer" required>
+            <input class="grids" type="number" name="stabelizer" id="stabilizer" placeholder="Stabelizer" >
 
         <!-- Total alkalinity -->
-            <input class="grids" type="number" name="totalAlk" id="totalAlk" placeholder="Total Alkalinity" required>
+            <input class="grids" type="number" name="totalAlk" id="totalAlk" placeholder="Total Alkalinity" >
 
-        <!-- algae -->
-            <select class="grids" id="algae" name="algae-type" required>
-                <option value="" disabled selected>Algae Type</option>
-                <option value="None">None</option>
-                <option value="Green">Green</option>
-                <option value="Black">Black</option>
-            </select>
+        <!-- Acid demand -->
+        <input class="grids" type="number" name="acidDemand" id="acidDemand" placeholder="Acid Demand in drops" >
 
         <!-- water clarity -->
-            <select class="grids" id="clarity" name="clarityType" required>
-                <option value="" disabled selected>Water Clarity</option>
-                <option value="Clear">Clear</option>
-                <option value="Blue/White">Blue/White</option>
-                <option value="Lite Green/Clear">Lite Green/Clear</option>
-                <option value="Green/Cloudy">Green/Cloudy</option>
-                <option value="Dark Green/Very Cloudy">Dark Green/Very Cloudy</option>
+            <select class="grids" id="clarity" name="clarityType" >
+                <option value="" class="greyText" disabled selected>Water Clarity</option>
+                <option value="Clear" class="blackText">Clear</option>
+                <option value="Blue/White" class="blackText">Blue/White</option>
+                <option value="Lite Green/Clear" class="blackText">Lite Green/Clear</option>
+                <option value="Green/Cloudy" class="blackText">Green/Cloudy</option>
+                <option value="Dark Green/Very Cloudy" class="blackText">Dark Green/Very Cloudy</option>
             </select>
 
         <!-- Person that preformed the test -->
-            <input class="grids" type="text" name="user" id="user" placeholder="Tested By" required>
+            <input class="grids" type="text" name="user" id="user" placeholder="Tested By">
 
         <!-- Free chlorine -->
-            <input class="grids" type="number" name="FreeC" id="freeC" placeholder="Free Chlorine" step="0.01" required>
+            <input class="grids" type="number" name="FreeC" id="freeC" placeholder="Free Chlorine" step="0.01" >
         
         <!-- copper level -->
-            <input class="grids" type="number" name="copper" id="copper" placeholder="Copper Reading" step="0.01" required>
+            <input class="grids" type="number" name="copper" id="copper" placeholder="Copper Reading" step="0.01" >
 
         <!-- date tested -->
-            <input class="grids" type="date" name="date" id="date" placeholder="Date tested" required>
+            <input class="grids" type="date" name="date" id="date" placeholder="Date tested" >
 
         <!-- Get Results -->
             <button class="grids" id="btn" type="submit">Get Results</button>
@@ -84,18 +79,11 @@
         </div>
 
         <!-- Display if Metal magic needs to be used -->
-        <div class="stepSeven">
-            <h3 class="stepSevenHeading"></h3>
-            <p class="stepSevenExplain"></p>
-        </div>
-        
-
-        <!-- Get stabelizer level and adjust if needed -->
         <div class="stepThree">
             <h3 class="stepThreeHeading"></h3>
             <p class="stepThreeExplain"></p>
         </div>
-
+        
         <!-- Get Alkalinity level and adjust if needed -->
         <div class="stepFour">
             <h3 class="stepFourHeading"></h3>
@@ -112,7 +100,14 @@
         <div class="stepSix">
             <h3 class="stepSixHeading"></h3>
             <p class="stepSixExplain"></p>
-        </div>      
+        </div>  
+
+        <!-- Get stabelizer level and adjust if needed -->
+        <div class="stepSeven">
+            <h3 class="stepSevenHeading"></h3>
+            <p class="stepSevenExplain"></p>
+        </div>
+        
 
         <!-- Display if clarifier needs to be used -->
         <div class="stepSix">
