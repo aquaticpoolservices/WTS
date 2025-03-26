@@ -16,29 +16,29 @@
     <div class="container">
 
         <!-- input for pool volume -->
-            <input class="grids" type="number" name="volume" id="volume" placeholder="volume x1000L" step="0.01" >
+            <input class="grids" type="number" name="volume" id="volume" placeholder="volume x1000L" step="0.01" required>
 
         <!-- PH level -->
-            <input class="grids" type="number" name="ph" id="ph" placeholder="PH Level" step="0.01" >
+            <input class="grids" type="number" name="ph" id="ph" placeholder="PH Level" step="0.01" required>
 
         <!-- select pool surface type -->
-            <select class="grids" id="surface" name="surfaceType" >
+            <select class="grids" id="surface" name="surfaceType" required>
                 <option value="" disabled selected>Pool surface</option>
                 <option value="concrete" class="blackText">Concrete</option>
                 <option value="fiberglass" class="blackText">Fiberglass</option>
             </select>
 
         <!-- stabelizer level -->
-            <input class="grids" type="number" name="stabelizer" id="stabilizer" placeholder="Stabelizer" >
+            <input class="grids" type="number" name="stabelizer" id="stabilizer" placeholder="Stabelizer" required>
 
         <!-- Total alkalinity -->
-            <input class="grids" type="number" name="totalAlk" id="totalAlk" placeholder="Total Alkalinity" >
+            <input class="grids" type="number" name="totalAlk" id="totalAlk" placeholder="Total Alkalinity" required>
 
         <!-- Acid demand -->
-        <input class="grids" type="number" name="acidDemand" id="acidDemand" placeholder="Acid Demand in drops" >
+        <input class="grids" type="number" name="acidDemand" id="acidDemand" placeholder="Acid Demand in drops" required>
 
         <!-- water clarity -->
-            <select class="grids" id="clarity" name="clarityType" >
+            <select class="grids" id="clarity" name="clarityType" required>
                 <option value="" class="greyText" disabled selected>Water Clarity</option>
                 <option value="Clear" class="blackText">Clear</option>
                 <option value="Blue/White" class="blackText">Blue/White</option>
@@ -51,13 +51,13 @@
             <input class="grids" type="text" name="user" id="user" placeholder="Tested By">
 
         <!-- Free chlorine -->
-            <input class="grids" type="number" name="FreeC" id="freeC" placeholder="Free Chlorine" step="0.01" >
+            <input class="grids" type="number" name="FreeC" id="freeC" placeholder="Free Chlorine" step="0.01" required>
         
         <!-- copper level -->
-            <input class="grids" type="number" name="copper" id="copper" placeholder="Copper Reading" step="0.01" >
+            <input class="grids" type="number" name="copper" id="copper" placeholder="Copper Reading" step="0.01" required>
 
         <!-- date tested -->
-            <input class="grids" type="date" name="date" id="date" placeholder="Date tested" >
+            <input class="grids" type="date" name="date" id="date" placeholder="Date tested" required>
 
         <!-- Get Results -->
             <button class="grids" id="btn" type="submit">Get Results</button>
