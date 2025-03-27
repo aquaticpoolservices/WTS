@@ -212,9 +212,9 @@ document.getElementById('form').addEventListener('submit', function (event) {
             'Add Chlorine',
             `Add ${formatValue(totalDose, 'Kg')} of HTH granular chlorine directly into the water while the pump is running.`
         );
-    } else if (freeChlorine > 3) {
+    } else if (freeChlorine >= 3) {
         // Case: Free chlorine is above 3ppm -> No action required
-        updateStep('chlorine', 'Chlorine Levels', 'Chlorine levels are already sufficient. No action is needed.');
+        updateStep('chlorine');
     } else {
         // Default case -> No clear action
         updateStep('chlorine', 'Chlorine Levels', 'Please verify your pool conditions and try again.');
