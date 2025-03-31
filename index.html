@@ -12,32 +12,31 @@
     <h1>H2OCheck</h1>
     <p>Please test your water using a test strip or a water test kit. Once you have tested the water, enter the information in the fields below to get detailed step by step instructions on rectifying chemical levels. </p>
 
-<form id="form" method="post">
-    <div class="container">
-
-        <!-- input for pool volume -->
-            <input class="grids" type="number" name="volume" id="volume" placeholder="volume x1000L" step="0.01" required>
-
-        <!-- PH level -->
+    <form id="form" method="post">
+        <div class="container">
+            <!-- Input for pool volume -->
+            <input class="grids" type="number" name="volume" id="volume" placeholder="Volume x1000L" step="0.01" required>
+    
+            <!-- Input for PH level -->
             <input class="grids" type="number" name="ph" id="ph" placeholder="PH Level" step="0.01" required>
-
-        <!-- select pool surface type -->
+    
+            <!-- Select for pool surface type -->
             <select class="grids" id="surface" name="surfaceType" required>
                 <option value="" disabled selected>Pool surface</option>
                 <option value="concrete" class="blackText">Concrete</option>
                 <option value="fiberglass" class="blackText">Fiberglass</option>
             </select>
-
-        <!-- stabelizer level -->
-            <input class="grids" type="number" name="stabelizer" id="stabilizer" placeholder="Stabelizer" required>
-
-        <!-- Total alkalinity -->
+    
+            <!-- Input for stabilizer level -->
+            <input class="grids" type="number" name="stabilizer" id="stabilizer" placeholder="Stabilizer" required>
+    
+            <!-- Input for Total Alkalinity -->
             <input class="grids" type="number" name="totalAlk" id="totalAlk" placeholder="Total Alkalinity" required>
-
-        <!-- Acid demand -->
-        <input class="grids" type="number" name="acidDemand" id="acidDemand" placeholder="Acid Demand in drops" required>
-
-        <!-- water clarity -->
+    
+            <!-- Input for Acid Demand -->
+            <input class="grids" type="number" name="acidDemand" id="acidDemand" placeholder="Acid Demand in drops" required>
+    
+            <!-- Select for water clarity -->
             <select class="grids" id="clarity" name="clarityType" required>
                 <option value="" class="greyText" disabled selected>Water Clarity</option>
                 <option value="Clear" class="blackText">Clear</option>
@@ -46,23 +45,28 @@
                 <option value="Green/Cloudy" class="blackText">Green/Cloudy</option>
                 <option value="Dark Green/Very Cloudy" class="blackText">Dark Green/Very Cloudy</option>
             </select>
-
-        <!-- Person that preformed the test -->
+    
+            <!-- Input for Tested By -->
             <input class="grids" type="text" name="user" id="user" placeholder="Tested By">
-
-        <!-- Free chlorine -->
+    
+            <!-- Input for Free Chlorine -->
             <input class="grids" type="number" name="FreeC" id="freeC" placeholder="Free Chlorine" step="0.01" required>
-        
-        <!-- copper level -->
+    
+            <!-- Input for Copper Level -->
             <input class="grids" type="number" name="copper" id="copper" placeholder="Copper Reading" step="0.01" required>
-
-        <!-- date tested -->
-            <input class="grids" type="date" name="date" id="date" placeholder="Date tested" required>
-
-        <!-- Get Results -->
+    
+            <!-- Input for Date Tested -->
+            <input class="grids" type="date" name="date" id="date"  required>
+    
+            <!-- Submit Button -->
             <button class="grids" id="btn" type="submit">Get Results</button>
-    </div> 
-</form>
+        </div>
+    </form>
+    <br>
+    <div>        
+        <button id="printResults" class="grids">Print Page</button>
+        <button id="newTest" class="grids">New Test</button>
+    </div>
 
     <div class="results">
     
@@ -114,11 +118,7 @@
             <h3 class="stepEightHeading"></h3>
             <p class="stepEightExplain"></p>
         </div>        
-  
 
         
-        <button id="printResults" class="grids">Print Page</button>
-        <button id="newTest" class="grids">New Test</button>
-
 </body>
 </html>
